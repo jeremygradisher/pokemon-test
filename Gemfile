@@ -1,12 +1,6 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
 ruby '2.6.3'
-
 
 gem 'sidekiq'
 #for sidekiq ui
@@ -16,13 +10,9 @@ gem 'sinatra', github: 'sinatra/sinatra' #some dependency issue with rails5
 gem 'rails', '~> 5.1.5'
 
 
-# Use sqlite3 as the database for Active Record
-group :development do
-  
-end
 
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem "puma", ">= 3.12.2"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -43,6 +33,15 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+#fixing vulnerabilities
+gem "actionview", ">= 5.1.6.2"
+gem "activejob", ">= 5.1.6.1"
+gem "rubyzip", ">= 1.3.0"
+gem "ffi", ">= 1.9.24"
+gem "nokogiri", ">= 1.10.4"
+gem "rack", ">= 2.0.8"
+gem "loofah", ">= 2.3.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
