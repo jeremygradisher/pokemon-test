@@ -5,7 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.3.1'
+ruby '2.6.3'
+
 
 gem 'sidekiq'
 #for sidekiq ui
@@ -14,12 +15,10 @@ gem 'sinatra', github: 'sinatra/sinatra' #some dependency issue with rails5
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 
-group :production do
-  gem 'pg'
-end
+
 # Use sqlite3 as the database for Active Record
 group :development do
-  gem 'sqlite3'
+  
 end
 
 # Use Puma as the app server
@@ -52,6 +51,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'sqlite3', '~> 1.3.6'
 end
 
 group :development do
@@ -61,6 +61,11 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :production do
+  gem 'pg', '~> 0.21.0'
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
