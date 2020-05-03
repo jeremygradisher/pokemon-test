@@ -12,7 +12,7 @@ gem 'rails', '~> 5.1.5'
 
 
 # Use Puma as the app server
-gem "puma", ">= 3.12.2"
+gem "puma", ">= 4.3.3"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -39,7 +39,7 @@ gem "actionview", ">= 5.1.6.2"
 gem "activejob", ">= 5.1.6.1"
 gem "rubyzip", ">= 1.3.0"
 gem "ffi", ">= 1.9.24"
-gem "nokogiri", ">= 1.10.4"
+gem "nokogiri", ">= 1.10.8"
 gem "rack", ">= 2.0.8"
 gem "loofah", ">= 2.3.1"
 
