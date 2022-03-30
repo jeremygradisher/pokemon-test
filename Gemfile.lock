@@ -1,13 +1,13 @@
 GIT
-  remote: git://github.com/sinatra/sinatra.git
-  revision: 91477e6dad7c9d8eb1c358e47b9d83b73d626f84
+  remote: https://github.com/sinatra/sinatra.git
+  revision: b4f61f59cf8f938db261a6561a69ca61d01e8581
   specs:
-    rack-protection (2.1.0)
+    rack-protection (3.0.0)
       rack
-    sinatra (2.1.0)
+    sinatra (3.0.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
-      rack-protection (= 2.1.0)
+      rack-protection (= 3.0.0)
       tilt (~> 2.0)
 
 GEM
@@ -99,7 +99,7 @@ GEM
     minitest (5.14.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.5.2)
+    nio4r (2.5.8)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     pg (0.21.0)
@@ -107,7 +107,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.4)
-    puma (4.3.3)
+    puma (4.3.12)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-test (1.1.0)
@@ -145,7 +145,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redis (4.1.4)
-    ruby2_keywords (0.0.2)
+    ruby2_keywords (0.0.5)
     ruby_dep (1.5.0)
     rubyzip (2.3.0)
     sass (3.7.4)
